@@ -47,13 +47,7 @@ h6 {
 header {
   padding: .8rem 2%;
   background-color: var(--accent2-color);
-  display: grid;
-  grid-template-columns: 100px auto;
   color: white;
-}
-
-header div {
-  margin-left: 10px;
 }
 
 header h1 {
@@ -63,16 +57,14 @@ header h1 {
 header h2 {
   margin: 0; 
   font-weight: normal; 
-  padding-top:5px;
 }
 
-header img {
-  width: 100%;
-  height: auto;
+header figure.logo {
+  float: left;
+  margin: 0 2% 0 0;
 }
 
 .headerdate {
-  grid-column: span 2;
   color: white;
   text-align: center;
   margin-top: 0.4em;
@@ -229,4 +221,11 @@ footer  {
 .mapouter {
   position: relative;
   text-align: right;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
