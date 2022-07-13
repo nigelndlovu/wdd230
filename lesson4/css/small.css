@@ -193,6 +193,31 @@ button:hover {
   transform: rotate(360deg);
 }
 
+.discoversection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 2rem 2%;
+}
+
+.discoversection img {
+  width: 95%;
+  transition: 0.2s;
+}
+
+.discoversection img:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
 /*--------------Footer--------------*/
 
 footer  {
