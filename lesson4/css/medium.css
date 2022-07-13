@@ -11,6 +11,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .discoversection {
+    margin: 4rem;
+  }
+
   .mainsection section:nth-child(1),
   .mainsection section:nth-child(2) {
     grid-column: span 2;

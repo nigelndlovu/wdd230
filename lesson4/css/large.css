@@ -39,6 +39,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .discoversection {
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: auto;
+  }
+
   .mainsection section:nth-child(1),
   .mainsection section:nth-child(2) {
     grid-column: span 1;
