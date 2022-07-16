@@ -74,6 +74,11 @@
     grid-column: span 3;
   }
 
+  .memberb {
+    display: inline-block;
+    border: none;
+  }
+
 /*-------------Footer---------------*/
 
 }
