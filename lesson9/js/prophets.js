@@ -18,6 +18,7 @@ function displayProphets(prophet) {
     let portrait = document.createElement('img');
     let birthDate = document.createElement('birthdate');
     let birthPlace = document.createElement('birthplace');
+    let deathDate = document.createElement('death');
     let order = ``;
 
     // set class attribute to the container
@@ -28,6 +29,7 @@ function displayProphets(prophet) {
     h2.innerHTML = `${prophet.name} <span class="highlight">${prophet.lastname}</span>`;
     birthDate.innerHTML = `Date of birth: ${prophet.birthdate}`;
     birthPlace.innerHTML = `Place of birth: ${prophet.birthplace}`;
+    deathDate.innerHTML = `Date of death: ${prophet.death}`;
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', prophet.imageurl);
@@ -41,6 +43,7 @@ function displayProphets(prophet) {
     card.appendChild(h2);
     card.appendChild(birthDate);
     card.appendChild(birthPlace);
+    card.appendChild(deathDate);
     card.appendChild(portrait);
 
     // Add/append the existing HTML div with the cards class with the section(card)
