@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/large.css" />
 </head>
 <body>
+	
 	<header class="clearfix">
 		<div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
 		<figure class="logo">
@@ -36,11 +37,11 @@
 	<nav class="clearfix">
 		<ul class="navigation">
 			<li><a class="ham" href="#">☰</a></li>
-			   <li><a href="index.html">Home</a></li>
-			   <li><a href="discover.html">Discover</a></li>
-			   <li><a href="join.html">Join</a></li>
-               <li class="active"><a href="directory.html">Directory</a></li>
-			   <li><a href="contact.html">Contact Us</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="discover.html">Discover</a></li>
+			<li><a href="join.html">Join</a></li>
+			<li><a href="directory.html">Directory</a></li>
+			<li class="active"><a href="contact.html">Contact Us</a></li>
 		 </ul>
 		<div class="social">
 			<a href="#"><img src="images/facebook.png" alt="facebook page" width="30"></a>
@@ -48,12 +49,49 @@
 		</div>
 	</nav>
 	<main class="clearfix">
-		<h1>Directory</h1>
-        <div class="directoryBtns">
-            <button id="gridbtn">Grid</button>
-            <button id="listbtn">List</button>
-        </div>
-        <div class="cards"></div>
+		
+		<h1>Contact Us</h1>
+		<div class="mainsection-join">
+			<form method="get" action="message.html">
+				<h2>Submit a question</h2>
+				<p>Please complete this form to submit your question</p>
+				<label for="fname">First name*</label>
+				<input type="text" id="fname" name="fname" required>
+				<label for="lname">Last name*</label>
+				<input type="text" id="lname" name="lname" required>
+				<label for="email">E-mail*</label>
+				<input type="text" id="email" name="email" placeholder="address@mail.com" required>
+				<label for="questions">Question</label>
+				<textarea id="questions" name="questions" rows="5" cols="40"></textarea>
+				<label for="submit"></label>
+				<button type="submit" class="subscribe">Submit</button>
+			</form>
+			<table class="memberb">
+				<thead class="tablecolor">
+					<tr>
+						<th colspan="2"><h3>Membership Benefits</h3></th>
+				  	</tr>
+				</thead>
+				<tbody class="tablecolor">
+				  	<tr>
+						<th>NP Membership</th>
+						<td>For non profit organizations and there is no joining fee</td>
+				  	</tr>
+				  	<tr>
+						<th>Bronze Membership</th>
+						<td>Training available</td>
+				  	</tr>
+				  	<tr>
+						<th>Silver Membership</th>
+						<td>Training and marketing services</td>
+				  	</tr>
+				  	<tr>
+						<th>Gold Membership</th>
+						<td>Training, marketing and discounts</td>
+				  	</tr>
+				</tbody>
+			</table>
+		</div>
 	</main>
 	<footer>
 		<div class="wrapper">
@@ -80,8 +118,6 @@
     	</div>
 	</footer>
 	<script src="js/index.js"></script>
-    <script src="js/lazyload.js"></script>
 	<script src="js/windchill.js"></script>
-    <script src="js/directory.js"></script>
 </body>
 </html>
