@@ -1,0 +1,40 @@
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  header {
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row;
+  }
+
+  header div img {
+    width: 300px;
+    height: auto;
+  }
+
+  footer {
+    border-radius: 10px;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main section:nth-child(3) {
+    grid-column: span 1;
+  }
+}
