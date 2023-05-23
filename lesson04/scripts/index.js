@@ -39,3 +39,10 @@ document.querySelector(".headerdate").innerHTML= fulldate;
 document.querySelector('#getyear').textContent = year;
 
 document.querySelector('#lastmod').textContent = document.lastModified;
+
+const bannerdate = document.querySelector(".banner");
+if( date.getDay() === 1 || date.getDay() === 2) {
+    bannerdate.style.display = "flex";
+} else {
+    bannerdate.style.display = "none";
+}
