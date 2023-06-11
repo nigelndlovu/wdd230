@@ -20,7 +20,7 @@
 	<header>
     <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
 		<div>
-			<img class="logo" src="images/bcc.png" alt="Bulawayo chamber logo">
+			<img class="logo" src="images/bcc.webp" alt="Bulawayo chamber logo">
 		</div>
 		<div>
 			<h1>Bulawayo Chamber</h1>
@@ -54,11 +54,13 @@
 	<main>
     <div class="mainsection">
       <section id="hero">
-        <h2>Hero</h2>
-        <img src="images/bulawayo.jpeg" alt="Bulawayo CBD">
-        <p>
-          Our Bulawayo
-        </p>
+        <figure>
+					<img src="images/wdd230-org.jpg" alt="Bulawayo City CBD" sizes="50vw"
+					srcset="images/wdd230-org200.jpg 200w, images/wdd230-org500.jpg 500w, 
+					images/wdd230-org800.jpg 800w">
+          <figcaption>Hero Image</figcaption>
+				</figure>
+        <h2>City of Bulawayo</h2>
       </section>
       <section id="event">
         <h2>Events</h2>
@@ -72,9 +74,10 @@
       <section id="weather">
         <h2>Weather</h2>
         <p>
-          Temparature: 9.2&deg;C<br>
-					Humidity: 50%<br>
-					Wind Speed: 5.8km/h
+          Temparature: <span id="temp">9.2</span>&deg;C<br>
+					Humidity: <span id="humid">50</span>%<br>
+					Wind Speed: <span id="speed">5.8</span>km/h
+					Windchill: <span id="chill"></span>
         </p>
       </section>
       <section id="join">
@@ -149,5 +152,6 @@
     </div>
   </footer>
 	<script src="scripts/index.js"></script>
+  <script src="scripts/windchill.js"></script>
 </body>
 </html>
