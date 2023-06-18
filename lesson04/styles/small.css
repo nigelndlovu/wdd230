@@ -190,6 +190,11 @@ section {
   height: 100%;
 }
 
+.demographics {
+  align-items: center;
+  justify-content: center;
+}
+
 /*----------Footer------------*/
 footer  {
   padding: .5rem 2%;
