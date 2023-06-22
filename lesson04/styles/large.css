@@ -1,7 +1,6 @@
 @media only screen and (min-width: 60em) {
   header, nav, main,footer {
     max-width: 100rem;
-    margin: auto;
   }
 
   /*-----------Body------------*/
@@ -70,6 +69,11 @@
   #news {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
+  }
+
+  .memberb {
+    display: inline-block;
+    border: none;
   }
 
 /*-------------Footer---------------*/
