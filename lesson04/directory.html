@@ -31,10 +31,10 @@
   <nav>
     <ul class="navigation">
       <li><a class="ham" href="#">☰</a></li>
-      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="discover.html">Discover</a></li>
       <li><a href="join.html">Join</a></li>
-      <li><a href="directory.html">Directory</a></li>
+      <li class="active"><a href="directory.html">Directory</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
     <div class="social">
@@ -53,85 +53,12 @@
 		</div>
   </nav>
 	<main>
-    <div class="mainsection">
-      <section id="hero">
-        <figure>
-					<img src="images/wdd230-org.jpg" alt="Bulawayo City CBD" sizes="50vw"
-					srcset="images/wdd230-org200.jpg 200w, images/wdd230-org500.jpg 500w, 
-					images/wdd230-org800.jpg 800w">
-          <figcaption>Hero Image</figcaption>
-				</figure>
-        <h2>City of Bulawayo</h2>
-        <button type="submit">Join Now!</button>
-      </section>
-      <section id="event">
-        <h2>Events</h2>
-        <p>
-          Bulawayo Chamber Golf Tournament<br>
-          Venue: Bulawayo Golf Club<br>
-          Date: August, 12th 2023<br>
-          Time: 0900hrs
-        </p>
-      </section>
-      <section id="weather">
-        <h2>Weather</h2>
-        <p>
-          Temparature: <span id="temp">9.2</span>&deg;C<br>
-					Humidity: <span id="humid">50</span>%<br>
-					Wind Speed: <span id="speed">5.8</span>km/h
-					Windchill: <span id="chill"></span>
-        </p>
-      </section>
-      <section id="join">
-        <h2>Join Us!</h2>
-        <p>
-          For business collaborations, marketing platform, and 
-          participation in business conferences across the globe
-          at discounted costs! Join our chamber to help scale up
-          your business.
-        </p>
-      </section>
-      <section id="spotlights">
-        <section id="spot1">
-          <h2>Spotlight 1</h2>
-          <p>
-            Join us for our city wide Africa Day Celebration<br>
-            Venue: Centenary Park<br>
-            Date: May, 25th 2023<br>
-            Time: 1000hrs - 1600hrs
-          </p>
-        </section>
-        <section id="spot2">
-          <h2>Spotlight 2</h2>
-          <p>
-            Praesent porttitor ullamcorper tellus, nec semper 
-          massa finibus eget. Aenean luctus, dui eget eleifend 
-          luctus, lacus sapien blandit sem, consectetur aliquet 
-          justo nulla a mauris
-          </p>
-        </section>
-        <section id="spot3">
-          <h2>Spotlight 3</h2>
-          <p>
-            Duis tincidunt 
-          ex sed purus fermentum vestibulum vitae eget nunc. 
-          Nulla at diam a orci posuere lobortis id quis arcu.
-          </p>
-        </section>
-      </section>
-      <section id="news">
-        <h2>News Release</h2>
-        <h4>ZB unveils new service center</h4>
-        <p>
-          ZB Financial Holdings (ZBFH) has launched a new platinum service centre 
-          in Bulawayo as the bank spreads its wings to improve its service delivery 
-          and remain viable.
-          The service centre was officially opened on Saturday in an event attended 
-          by Minister of Provincial Affairs Judith Ncube and Councillor Tawanda Ruzive 
-          who was standing in for the Mayor, Solomon Mguni.
-        </p>
-      </section>
+    <h1>Directory</h1>
+    <div class="directoryBtns">
+      <button id="gridbtn">Grid</button>
+      <button id="listbtn">List</button>
     </div>
+    <div class="cards"></div>
   </main>
 	<footer>
     <div class="wrapper">
@@ -154,6 +81,8 @@
     </div>
   </footer>
 	<script src="scripts/index.js"></script>
+  <script src="scripts/lazyload.js"></script>
   <script src="scripts/windchill.js"></script>
+  <script src="scripts/directory.js"></script>
 </body>
 </html>
