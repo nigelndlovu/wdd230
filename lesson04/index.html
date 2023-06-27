@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-	<header>
+	<header class="clearfix">
     <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
 		<div>
 			<img class="logo" src="images/bcc.webp" alt="Bulawayo chamber logo">
@@ -28,7 +28,7 @@
 		</div>
     <div class="headerdate">Current date</div>
 	</header>
-  <nav>
+  <nav class="clearfix">
     <ul class="navigation">
       <li><a class="ham" href="#">☰</a></li>
       <li class="active"><a href="index.html">Home</a></li>
@@ -52,15 +52,10 @@
 			</svg></a>
 		</div>
   </nav>
-	<main>
+	<main class="clearfix">
     <div class="mainsection">
       <section id="hero">
-        <figure>
-					<img src="images/wdd230-org.jpg" alt="Bulawayo City CBD" sizes="50vw"
-					srcset="images/wdd230-org200.jpg 200w, images/wdd230-org500.jpg 500w, 
-					images/wdd230-org800.jpg 800w">
-          <figcaption>Hero Image</figcaption>
-				</figure>
+				<img src="images/bulawayo.jpeg" alt="Bulawayo City CBD">
         <h2>City of Bulawayo</h2>
         <button type="submit">Join Now!</button>
       </section>
@@ -76,9 +71,13 @@
       <section id="weather">
         <h2>Weather</h2>
         <p>
-          Temparature: <span id="temp">9.2</span>&deg;C<br>
-					Humidity: <span id="humid">50</span>%<br>
-					Wind Speed: <span id="speed">5.8</span>km/h
+          <figure>
+						<img src="" alt="" id="weather-icon">
+						<figcaption></figcaption>
+					</figure>
+          Temparature: <span id="current-temp"></span>&deg;C<br>
+					Humidity: <span id="humid"></span>%<br>
+					Wind Speed: <span id="speed"></span>km/h
 					Windchill: <span id="chill"></span>
         </p>
       </section>
@@ -133,7 +132,7 @@
       </section>
     </div>
   </main>
-	<footer>
+	<footer class="clearfix">
     <div class="wrapper">
       <img class="logo" src="images/bcc.png" alt="Logo"/>	
       <h3>Bulawayo Chamber</h3>
@@ -154,6 +153,7 @@
     </div>
   </footer>
 	<script src="scripts/index.js"></script>
+  <script src="scripts/weather.js"></script>
   <script src="scripts/windchill.js"></script>
 </body>
 </html>

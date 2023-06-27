@@ -1,5 +1,5 @@
 
-let t = parseInt(document.getElementById("temp").innerHTML);
+let t = parseInt(document.getElementById("current-temp").innerHTML);
 let s = parseFloat(document.getElementById("speed").innerHTML);
 
 let result = windChill(t, s);

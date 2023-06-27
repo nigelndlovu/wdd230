@@ -183,6 +183,12 @@ section {
   font-size: 3rem;
 }
 
+#hero button {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
+
 #hero img {
   position: absolute;
   object-fit: cover;
@@ -384,6 +390,13 @@ h2 {
 
 h3 {
   font-size: 1rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
