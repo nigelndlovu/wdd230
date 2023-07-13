@@ -1,16 +1,24 @@
 const url = 'json/data.json';
+let displayList = [];
 
-async function getDirectoryData() {
+getMembers();
+
+async function getMembers() {
   const response = await fetch(url);
   const data = await response.json();
   //console.table(data.details);
-  displayDetails(data.details);
+  displayList(data.details);
+
+  const filteredList = displayList.filter(detail => detail.member === "silver" || detail.member === "gold");
+
+  const pickedNumbers = pickRandom(filteredList);
+  displayDetails(filteredList[pickedNumbers[0]]);
+  displayDetails(filteredList[pickedNumbers[1]]);
+  displayDetails(filteredList[pickedNumbers[2]]);
 }
 
-getDirectoryData();
-
 const displayDetails = (details) => {
-  const cards = document.querySelector('div.cards');
+  const spotlights = document.querySelector('div#spotlights');
 
   details.forEach((detail) => {
     // Create elements to add to the document
@@ -45,14 +53,18 @@ const displayDetails = (details) => {
     card.appendChild(member);
     card.appendChild(weburl);
     
-    cards.appendChild(card);    
+    spotlights.appendChild(card);    
   });
 }
 
-const maingrid = document.querySelector('.cards')
-const gridbutton = document.querySelector('#gridbtn');
-const listbutton = document.querySelector('#listbtn');
-
-
-gridbutton.addEventListener('click', () => {maingrid.classList.add('cards')}, false);
-listbutton.addEventListener('click', () => {maingrid.classList.remove('cards')}, false);
+function pickRandom (pickList) {
+  const listLen = pickList.length;
+  const indexList = [];
+  while (indexList.length < 3) {
+      const randomIndex = Math.floor(Math.random() * (listLen));
+      if (!indexList.includes(randomIndex)) {
+          indexList.push(randomIndex);
+      }
+  }
+  return indexList;
+}

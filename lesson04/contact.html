@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-  <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
+	<div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
 	<header class="clearfix">
 		<a href="index.html"><img class="logo" src="images/blogo.webp" alt="Bulawayo chamber logo"></a>
     <div class="headerdate">Current date</div>
@@ -41,15 +41,47 @@
       <li><a class="ham" href="#">☰</a></li>
       <li><a href="index.html">Home</a></li>
       <li><a href="discover.html">Discover</a></li>
-      <li class="active"><a href="join.html">Join</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="join.html">Join</a></li>
+	  	<li><a href="directory.html">Directory</a></li>
+      <li class="active"><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
 	<main>
-    <div class="mainsection">
-      <p>Thank you for joining the chamber. Your membership will help us to reach new heights</p>
-    </div>
+		<h1>Contact Us</h1>
+		<div class="mainsection-join">
+			<form method="get" action="message.html">
+				<h2>Submit a question</h2>
+				<p>Please complete this form to submit your question</p>
+				<label for="fname">First name*</label>
+				<input type="text" id="fname" name="fname" required>
+				<label for="lname">Last name*</label>
+				<input type="text" id="lname" name="lname" required>
+				<label for="email">E-mail*</label>
+				<input type="text" id="email" name="email" placeholder="address@mail.com" required>
+				<label for="questions">Question</label>
+				<textarea id="questions" name="questions" rows="5" cols="40"></textarea>
+				<label for="submit"></label>
+				<button type="submit" class="subscribe">Submit</button>
+			</form>
+			<table class="memberb">
+				<thead class="tablecolor">
+					<tr>
+						<th colspan="2"><h3>Chamber Information</h3></th>
+				  	</tr>
+				</thead>
+				<tbody class="tablecolor">
+				  	<tr>
+						<td><p>Bulawayo Chamber of Commerce<p>
+							<p>9418 Mavondo Road</p>
+							<p>Bulawayo, Zimbabwe</p></td>
+				  	</tr>
+				  	<tr>
+						<td><p>&#128231; info@byochamber.com</p>
+							<p>&#128222; +(263) 779 071 607</p>
+							</td>
+				</tbody>
+			</table>
+		</div>
   </main>
 	<footer class="clearfix">
     <div class="details-footer">
@@ -75,6 +107,6 @@
   </footer>
 	<script src="scripts/index.js"></script>
   <script src="scripts/lazyload.js"></script>
-  <script src="scripts/windchill.js"></script>
+  <script src="scripts/join.js"></script>
 </body>
 </html>

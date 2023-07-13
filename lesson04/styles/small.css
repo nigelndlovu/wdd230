@@ -45,23 +45,18 @@ h6 {
 
 /*-----------Header-----------*/
 header {
-  padding: .8rem 2%;
+  display: grid;
+  grid-template-columns: 80px repeat(7, 1fr);
+  grid-template-rows: 90px auto auto;
+  padding: 3.5rem 2%;
+  align-items: center;
+  justify-content: center;
   background-color: var(--accent2-color);
   color: white;
 }
 
 header div {
   margin-left: 10px;
-}
-
-header h1 {
-  margin: 0;
-}
-
-header h2 {
-  margin: 0; 
-  font-weight: normal; 
-  padding-top:5px;
 }
 
 header figure.logo {
@@ -71,13 +66,21 @@ header figure.logo {
 
 .headerdate {
   color: white;
+  background-color: var(--accent2-color);
+  grid-column: 5/7;
+  grid-row: 1/2;
+  display: flex;
   text-align: center;
   margin-top: 0.4em;
   width: 100%;
 }
 
 .social {
-	margin-right: 1.5rem;
+  grid-column: 7/9;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
 }
 
 .social svg {
@@ -159,6 +162,48 @@ section {
   border: 1px solid var(--primary-color);
   margin: 0.3em;
   padding: 0.6em;
+}
+
+div#spotlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 0.3em;
+  padding: 0.6em;
+  text-align: center;
+}
+  
+div#spotlights section {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+div#spotlights section h2 {
+  padding: 1rem;
+  background-color: var(--accent2-color);
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+  
+div#spotlights section img {
+  width: 150px;
+  height: auto;
+  margin: 1rem;
+}
+
+div#spotlights section a {
+  text-align: center;
+}
+
+div#spotlights section:nth-child(3) {
+  display: none;
 }
 
 #join {
@@ -348,6 +393,7 @@ table, th, td {
 
 /*----------Footer------------*/
 footer  {
+  margin: 0 .25rem;
   padding: .5rem 2%;
   background-color: var(--accent2-color);
   text-align: center;
@@ -361,9 +407,13 @@ footer  {
 }
 
 .wrapper {
-  display: block;
-  justify-content: space-between;
-  align-items: center;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.contacts {
+  padding: 10px;
+  padding-top: 0;
 }
 
 .signnote  {
@@ -375,7 +425,18 @@ footer  {
 .mapouter {
   position: relative;
   text-align: right;
+  text-decoration: none;
   color: white;
+}
+
+.court {
+  align-items: center;
+  justify-content: center;
+}
+
+footer p.court a {
+  color: #ffffff;
+  text-decoration: none;
 }
   
 /*-------End-------*/

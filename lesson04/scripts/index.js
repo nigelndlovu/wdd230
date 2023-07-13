@@ -46,3 +46,26 @@ if( date.getDay() === 1 || date.getDay() === 2) {
 } else {
     bannerdate.style.display = "none";
 }
+
+const visitsDisplay = document.querySelector("#num-visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+function displayNumVisits (visitsDisplay, numVisits) {
+    if (!visitsDisplay) {
+        return;
+    } else {
+        if (numVisits != 0) {
+            visitsDisplay.textContent = numVisits;
+        } else {
+            visitsDisplay.textContent = `This is your first visit!`;
+        }
+    }
+}
+
+displayNumVisits(visitsDisplay, numVisits);
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
+

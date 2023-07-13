@@ -17,26 +17,10 @@
   <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-	<header>
-    <div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
-		<div>
-			<img class="logo" src="images/bcc.webp" alt="Bulawayo chamber logo">
-		</div>
-		<div>
-			<h1>Bulawayo Chamber</h1>
-			<h2>Where Businesses Meet</h2>
-		</div>
+	<div class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
+	<header class="clearfix">
+		<a href="index.html"><img class="logo" src="images/blogo.webp" alt="Bulawayo chamber logo"></a>
     <div class="headerdate">Current date</div>
-	</header>
-  <nav>
-    <ul class="navigation">
-      <li><a class="ham" href="#">☰</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="discover.html">Discover</a></li>
-      <li class="active"><a href="join.html">Join</a></li>
-	  <li><a href="directory.html">Directory</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
     <div class="social">
 			<a href="https://facebook.com"><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<g>
@@ -51,6 +35,16 @@
 				</g>
 			</svg></a>
 		</div>
+	</header>
+  <nav>
+    <ul class="navigation">
+      <li><a class="ham" href="#">☰</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li class="active"><a href="join.html">Join</a></li>
+	  	<li><a href="directory.html">Directory</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
   </nav>
 	<main>
     <h1>Join</h1>
@@ -110,20 +104,22 @@
 			</table>
 		</div>
   </main>
-	<footer>
-    <div class="wrapper">
-      <img class="logo" src="images/bcc.png" alt="Logo"/>	
-      <h3>Bulawayo Chamber</h3>
-      <p>9418 Mavondo Road, Bulawayo, Zimbabwe</p>
-    </div>
-    <div class="contacts">
-      <p>info@byochamber.com</p>
-      <p>+(263) 779 071 607</p>
-      <div class="mapouter">
-        <a href="https://www.google.co.zw/maps/place/Mavondo+Rd,+Bulawayo/@-20.1786327,28.5005081,17z/data=!3m1!4b1!4m5!3m4!1s0x1eb55213102a1d61:0x434d7f74d8057c42!8m2!3d-20.1786327!4d28.5026968"
-        >📍</a>Location<br>
+	<footer class="clearfix">
+    <div class="details-footer">
+      <img class="logo" src="images/blogo.webp" alt="Logo"/>
+      <div class="wrapper">
+        <p>Bulawayo Chamber of Commerce<p>
+        <p>9418 Mavondo Road</p>
+        <p>Bulawayo, Zimbabwe</p>
+      </div>
+      <div class="contacts">
+        <p>&#128231; info@byochamber.com</p>
+        <p>&#128222; +(263) 779 071 607</p>
+        <a class="mapouter" href="https://www.google.co.zw/maps/place/Mavondo+Rd,+Bulawayo/@-20.1786327,28.5005081,17z/data=!3m1!4b1!4m5!3m4!1s0x1eb55213102a1d61:0x434d7f74d8057c42!8m2!3d-20.1786327!4d28.5026968"
+        >&#128205; Location</a>
       </div>
     </div>
+    <p class="court">Weather data courtesy of: <a href="https://openweathermap.org">OpenWeatherMap.org</a></p>
     <hr>
     <div class="signnote">
 		  &copy; <span id="getyear"></span> ♖ Nigel Ndlovu ♖ Zimbabwe ♖
@@ -132,7 +128,6 @@
   </footer>
 	<script src="scripts/index.js"></script>
   <script src="scripts/lazyload.js"></script>
-  <script src="scripts/windchill.js"></script>
   <script src="scripts/join.js"></script>
 </body>
 </html>

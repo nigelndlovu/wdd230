@@ -6,6 +6,11 @@
   /*-----------Body------------*/
 
   /*-----------Header-----------*/
+  .social {
+    grid-column: 7/9;
+    grid-row: 1/2;
+    margin-right: 1.5rem;
+  }
 
   /*----------Navigation----------*/
   nav {
@@ -13,7 +18,7 @@
   }
   
   nav ul {
-    width: 80%;
+    width: 100%;
   }
 
   .navigation {
@@ -62,6 +67,19 @@
     grid-template-rows: auto auto auto; 
   }
 
+  div#spotlights section:nth-child(9) {
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  div#spotlights section:nth-child(3) {
+    display: block;
+  }
+
   #spot2 {
     display: block;
   }
@@ -82,5 +100,4 @@
   }
 
 /*-------------Footer---------------*/
-
 }
